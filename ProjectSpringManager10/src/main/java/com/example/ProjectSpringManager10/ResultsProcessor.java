@@ -18,7 +18,9 @@ public class ResultsProcessor {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(", ");
                 if (parts.length == 4) {
-                    athletes.add(new Athlete(parts[0], parts[1], parts[2], parts[3]));
+                    String name = parts[0].split(" ")[0];
+                    String surname = parts[0].split(" ")[1];
+                    athletes.add(new Athlete(name, surname, parts[1], parts[2], parts[3]));
                 }
             }
         } catch (IOException e) {

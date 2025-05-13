@@ -38,9 +38,8 @@ public class ResultsProcessorTest {
         System.out.println("Number of athletes: " + athletes.size());
         assertEquals(2, athletes.size());
 
-
-        assertEquals("Иван Иванов", athletes.get(0).getLastName());
-        assertEquals("Петр Петров", athletes.get(1).getLastName());
+        assertEquals("Петр Петров", athletes.get(0).getFullName());
+        assertEquals("Иван Иванов", athletes.get(1).getFullName());
     }
 }
 

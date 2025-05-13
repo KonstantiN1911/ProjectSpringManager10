@@ -42,12 +42,14 @@ public class Athlete {
     public String getGender() {
         return gender;
     }
-
     public String getLastName() {
         return lastName;
     }
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 
-    public Athlete(String distance, String firstName, String gender, String lastName) {
+    public Athlete(String firstName, String lastName, String gender, String distance, String time) {
         this.distance = distance;
         this.firstName = firstName;
         this.gender = gender;
